@@ -1,0 +1,128 @@
+Create a professional website for a camping equipment brand called **Vivacamping**.
+
+GENERAL STYLE
+The website must have a modern, clean and professional design.
+The main color palette must be **orange and black**, using the uploaded **brand logo as visual reference** for colors and identity.
+The site should look like a professional outdoor equipment brand website.
+
+SITE PURPOSE
+The website is both:
+• a **product catalog store**
+• a **brand information portal**
+
+Important:
+The site **must NOT include** shopping cart, checkout system, or user account registration.
+
+Instead of online purchases, customers will contact the company through **WhatsApp to request a quote**.
+
+STRUCTURE OF THE WEBSITE
+
+1. HOME PAGE
+   The homepage should include:
+
+• A top navigation bar with:
+
+* Home
+* Products
+* Videos
+* About the Brand
+* Contact
+
+• A hero section with the brand logo and a strong outdoor/camping visual style.
+
+• A short **placeholder section for the brand story** (leave space for text that will be added later).
+
+• A featured **products section** showing product cards.
+
+Each product card should include:
+
+* product image
+* product name
+* short placeholder description
+* button labeled **"Ver Produto"**
+
+2. PRODUCTS PAGE
+
+The products page should display a **catalog grid layout** with product cards.
+
+Each product card must contain:
+
+* product image
+* product name
+* placeholder description
+* button **"Ver Produto"**
+
+Important:
+Leave placeholder spaces so product descriptions and images can be added later.
+
+3. PRODUCT DETAIL PAGE
+
+When the user clicks **"Ver Produto"**, they should be taken to a dedicated product page.
+
+This page must include:
+
+• A **product image gallery with arrows** (similar to AliExpress style image navigation).
+Users should be able to click arrows to move between product images.
+
+• A large product title.
+
+• A detailed **product description section (placeholder text)**.
+
+• A **"Fazer Orçamento" button instead of a buy button**.
+
+The **"Fazer Orçamento" button must open a WhatsApp link** where customers can request a quote.
+
+Example behavior:
+Clicking the button opens WhatsApp conversation with a pre-filled message.
+
+4. VIDEOS PAGE
+
+Create a page dedicated to videos.
+
+The page should display **video thumbnails** in a grid.
+
+When the user clicks a thumbnail, it should open the corresponding video link (YouTube or other link).
+
+Leave placeholders for the video thumbnails and video links.
+
+5. ABOUT THE BRAND PAGE
+
+Create a page telling the story of Vivacamping.
+
+Since the text will be provided later, include:
+
+• Title section
+• Placeholder paragraphs for the brand history
+• Space for future images
+
+6. CONTACT SECTION
+
+Include a contact section with:
+
+• WhatsApp contact button
+• placeholder for phone/email if needed later
+
+DESIGN REQUIREMENTS
+
+• Clean modern layout
+• Orange and black color palette
+• Professional outdoor brand aesthetic
+• Mobile responsive design
+• Good spacing and typography
+• Modern product cards
+• Smooth hover effects
+
+TECHNICAL REQUIREMENTS
+
+Generate the site using **clean HTML, CSS and basic JavaScript**.
+
+The code must be **well organized and easy to edit later**.
+
+Leave clear placeholder comments in the code where the following content will be added later:
+
+* product descriptions
+* brand story text
+* video links
+* product images
+
+The final result should look like a **professional camping equipment brand website**, similar in quality to international outdoor brands.

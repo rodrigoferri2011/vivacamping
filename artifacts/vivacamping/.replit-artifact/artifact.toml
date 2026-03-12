@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "Vivacamping"
+version = "1.0.0"
+id = "artifacts/vivacamping"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+localPort = 20770
+name = "web"
+paths = ["/"]
+
+[services.development]
+run = "pnpm --filter @workspace/vivacamping run dev"
+
+[services.env]
+PORT = "20770"
+BASE_PATH = "/"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/vivacamping", "run", "build"]
+publicDir = "artifacts/vivacamping/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"

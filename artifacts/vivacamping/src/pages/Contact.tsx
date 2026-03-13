@@ -1,7 +1,7 @@
 import { Phone, Instagram, MapPin, Clock, MessageCircle } from "lucide-react";
 
 const WHATSAPP_NUMBER = "5519998161001";
-const WHATSAPP_MESSAGE = encodeURIComponent("Olá! Vim pelo site da Vivacamping e gostaria de mais informações.");
+const WHATSAPP_MESSAGE = encodeURIComponent("Olá! Vim através do site do Vivacamping para fazer um orçamento.");
 
 export default function Contact() {
   return (
@@ -92,7 +92,7 @@ export default function Contact() {
             Informe o produto desejado, quantidade e data — faremos o melhor orçamento para você!
           </p>
           <a
-            href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Olá! Gostaria de solicitar um orçamento. Produto: [informe o produto]. Quantidade: [informe a quantidade]. Data: [informe a data].")}`}
+            href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Olá! Vim através do site do Vivacamping para fazer um orçamento. Produto: [informe o produto]. Quantidade: [informe a quantidade]. Data: [informe a data].")}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-3 rounded-xl transition-all"

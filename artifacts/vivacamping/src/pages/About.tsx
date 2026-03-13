@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { ArrowRight, Phone } from "lucide-react";
 
 const WHATSAPP_NUMBER = "5519998161001";
-const WHATSAPP_MESSAGE = encodeURIComponent("Olá! Vim pelo site da Vivacamping e gostaria de mais informações.");
+const WHATSAPP_MESSAGE = encodeURIComponent("Olá! Vim através do site do Vivacamping para fazer um orçamento.");
 
 export default function About() {
   return (

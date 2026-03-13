@@ -4,7 +4,7 @@ import ProductCard from "@/components/ProductCard";
 import { products } from "@/data/products";
 
 const WHATSAPP_NUMBER = "5519998161001";
-const WHATSAPP_MESSAGE = encodeURIComponent("Olá! Vim pelo site da Vivacamping e gostaria de fazer um orçamento.");
+const WHATSAPP_MESSAGE = encodeURIComponent("Olá! Vim através do site do Vivacamping para fazer um orçamento.");
 
 const featuredProducts = products.slice(0, 4);
 

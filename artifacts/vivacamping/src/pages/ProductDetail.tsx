@@ -24,7 +24,7 @@ export default function ProductDetail() {
   }
 
   const whatsappMessage = encodeURIComponent(
-    `Olá! Vim pelo site da Vivacamping e gostaria de fazer um orçamento para: ${product.name}`
+    `Olá! Vim através do site do Vivacamping para fazer um orçamento. Produto de interesse: ${product.name}`
   );
 
   const prevImage = () =>

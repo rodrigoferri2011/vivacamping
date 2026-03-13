@@ -57,7 +57,7 @@ export default function Products() {
           <p className="text-muted-foreground text-sm">
             Não encontrou o que procura?{" "}
             <a
-              href="https://wa.me/5519998161001?text=Ol%C3%A1!%20Gostaria%20de%20saber%20sobre%20produtos%20espec%C3%ADficos."
+              href={`https://wa.me/5519998161001?text=${encodeURIComponent("Olá! Vim através do site do Vivacamping para fazer um orçamento.")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-green-600 hover:text-green-700 font-semibold underline"

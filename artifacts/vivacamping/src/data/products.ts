@@ -13,7 +13,7 @@ export const products: Product[] = [
     name: "Elásticos",
     shortDescription: "Elásticos com ganchos para fixação segura de lonas e estruturas de camping.",
     description: "Descrição em breve.",
-    images: ["/elasticos1.png", "/elasticos2.png", "/elasticos3.png"],
+    images: ["/elasticos2.png", "/elasticos3.png"],
     category: "Fixação",
   },
   {
@@ -71,6 +71,14 @@ export const products: Product[] = [
     description: "Descrição em breve.",
     images: ["/specs-barraca.png"],
     category: "Estrutura",
+  },
+  {
+    id: "extensao-geral",
+    name: "Extensão Geral para Dentro da Barraca",
+    shortDescription: "Extensão com múltiplas tomadas para distribuição de energia dentro da barraca.",
+    description: "Descrição em breve.",
+    images: ["/extensao-geral.png"],
+    category: "Elétrica",
   },
 ];
 

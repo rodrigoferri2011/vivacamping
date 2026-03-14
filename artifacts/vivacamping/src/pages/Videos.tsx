@@ -1,4 +1,4 @@
-import { ExternalLink, Play } from "lucide-react";
+import { ExternalLink, Play, User } from "lucide-react";
 import { videos } from "@/data/videos";
 
 export default function Videos() {
@@ -9,15 +9,13 @@ export default function Videos() {
           <span className="text-orange-400 font-semibold text-sm uppercase tracking-widest">Mídia</span>
           <h1 className="text-4xl md:text-5xl font-black text-white mt-2 mb-4">Nossos Vídeos</h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            {/* PLACEHOLDER: Adicione uma descrição da seção de vídeos aqui */}
-            Veja nossas aventuras, dicas de camping e demonstrações de produtos em ação.
+            Veja nossas aventuras, demonstrações de equipamentos e experiências de clientes em ação.
           </p>
         </div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        {/* PLACEHOLDER: Adicione mais vídeos ao arquivo src/data/videos.ts */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
           {videos.map((video) => (
             <a
               key={video.id}
@@ -28,25 +26,30 @@ export default function Videos() {
             >
               <div className="relative aspect-video overflow-hidden bg-[#1a2344]">
                 <img
-                  src={video.thumbnail}
+                  src={`https://img.youtube.com/vi/${video.youtubeId}/hqdefault.jpg`}
                   alt={video.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
+                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300" />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-16 h-16 bg-orange-500/90 rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-red-600/90 rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 group-hover:bg-red-600 transition-all duration-300">
                     <Play className="h-7 w-7 text-white fill-white ml-1" />
                   </div>
                 </div>
-                <div className="absolute top-3 right-3 bg-black/50 rounded-full p-1.5">
+                <div className="absolute top-3 right-3 bg-black/60 rounded-full p-1.5">
                   <ExternalLink className="h-3.5 w-3.5 text-white" />
                 </div>
               </div>
 
               <div className="p-5">
-                <h3 className="font-bold text-foreground text-lg mb-2 group-hover:text-orange-500 transition-colors">
+                <h3 className="font-bold text-foreground text-lg mb-1 group-hover:text-orange-500 transition-colors leading-tight">
                   {video.title}
                 </h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <div className="flex items-center gap-1.5 text-muted-foreground text-sm mb-2">
+                  <User className="h-3.5 w-3.5 flex-shrink-0" />
+                  <span className="font-medium">{video.channel}</span>
+                </div>
+                <p className="text-muted-foreground text-sm">
                   {video.description}
                 </p>
               </div>

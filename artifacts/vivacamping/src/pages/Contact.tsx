@@ -60,7 +60,7 @@ export default function Contact() {
             <h3 className="font-bold text-foreground mb-1">Localização</h3>
             <p className="text-muted-foreground text-sm mb-1">
               {/* PLACEHOLDER: Adicione o endereço completo aqui */}
-              São Paulo, SP — Brasil
+              Campinas, SP — Brasil
             </p>
             <p className="text-muted-foreground text-xs">Atendemos toda a região de SP</p>
           </div>

@@ -18,8 +18,8 @@ export default function About() {
             className="h-24 w-24 rounded-full border-4 border-orange-400 shadow-2xl object-cover mx-auto mb-6"
           />
           <span className="text-orange-400 font-semibold text-sm uppercase tracking-widest">Nossa História</span>
-          <h1 className="text-4xl md:text-5xl font-black text-white mt-2 mb-4">Sobre a Vivacamping</h1>
-          <p className="text-gray-300 text-lg">Locação e Experiência de Campismo em São Paulo</p>
+          <h1 className="text-4xl md:text-5xl font-black text-white mt-2 mb-4">Sobre o Vivacamping</h1>
+          <p className="text-gray-300 text-lg">Locação e Experiência de Campismo em Campinas</p>
         </div>
       </div>
 
@@ -33,11 +33,11 @@ export default function About() {
             </h2>
             {/* PLACEHOLDER: Adicione o texto da história da marca aqui — seção 1 */}
             <p className="text-muted-foreground leading-relaxed mb-4">
-              A Vivacamping nasceu da paixão pela natureza e do desejo de compartilhar experiências únicas com famílias e grupos. Nossos fundadores, apaixonados por aventuras ao ar livre, perceberam a necessidade de equipamentos de qualidade acessíveis para todos.
+              O Vivacamping nasceu da paixão pela natureza e do desejo de compartilhar experiências únicas com famílias e grupos. Nossos fundadores, apaixonados por aventuras ao ar livre, perceberam a necessidade de equipamentos de qualidade acessíveis para todos.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               {/* PLACEHOLDER: Continue a história aqui */}
-              Com dedicação e amor pelo que fazem, a Vivacamping cresceu e se tornou referência em locação e experiência de campismo em São Paulo, atendendo centenas de famílias com excelência.
+              Com dedicação e amor pelo que fazem, o Vivacamping cresceu e se tornou referência em locação e experiência de campismo em Campinas, atendendo centenas de famílias com excelência.
             </p>
           </div>
           <div className="rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
@@ -76,12 +76,12 @@ export default function About() {
           </h2>
           <p className="text-muted-foreground leading-relaxed text-center max-w-2xl mx-auto mb-8">
             {/* PLACEHOLDER: Adicione o texto aqui */}
-            Com anos de experiência, nos tornamos especialistas em tornar seu camping perfeito.
+            Desde 2019, nos tornamos especialistas em tornar seu camping perfeito.
           </p>
           <div className="grid sm:grid-cols-3 gap-6 text-center">
             {[
               { number: "500+", label: "Famílias Atendidas" },
-              { number: "5 anos", label: "De Experiência" },
+              { number: "Desde 2019", label: "No Mercado" },
               { number: "100%", label: "Satisfação" },
             ].map((stat) => (
               <div key={stat.label} className="bg-card rounded-xl p-5 shadow-sm">

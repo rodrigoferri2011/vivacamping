@@ -22,7 +22,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Sua parceira para aventuras inesquecíveis ao ar livre. Equipamentos de qualidade para você e sua família.
+              Seu parceiro para aventuras inesquecíveis ao ar livre. Equipamentos de qualidade para você e sua família.
             </p>
           </div>
 

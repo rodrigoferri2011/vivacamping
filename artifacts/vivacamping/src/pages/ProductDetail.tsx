@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useParams, Link } from "wouter";
-import { ChevronLeft, ChevronRight, Phone, ArrowLeft, Share2 } from "lucide-react";
+import { ChevronLeft, ChevronRight, Phone, ArrowLeft, Share2, Tag, CheckCircle2 } from "lucide-react";
 import { products } from "@/data/products";
 
 const WHATSAPP_NUMBER = "5519998161001";
@@ -123,19 +123,20 @@ export default function ProductDetail() {
               </span>
             </div>
 
-            <h1 className="text-3xl md:text-4xl font-black text-foreground mt-3 mb-4 leading-tight">
+            <h1 className="text-3xl md:text-4xl font-black text-foreground mt-3 mb-3 leading-tight">
               {product.name}
             </h1>
 
-            <p className="text-muted-foreground text-lg leading-relaxed mb-6">
+            <p className="text-muted-foreground text-base leading-relaxed mb-4">
               {product.shortDescription}
             </p>
 
-            <div className="bg-muted/40 rounded-xl p-5 mb-8">
-              <h2 className="font-bold text-foreground mb-3 text-sm uppercase tracking-wide">Descrição do Produto</h2>
-              {/* PLACEHOLDER: Adicione a descrição detalhada abaixo */}
-              <div className="text-muted-foreground text-sm leading-relaxed whitespace-pre-line">
-                {product.description}
+            {/* PRICE */}
+            <div className="flex items-center gap-2 bg-orange-50 border border-orange-200 rounded-xl px-5 py-3 mb-6">
+              <Tag className="h-5 w-5 text-orange-500 flex-shrink-0" />
+              <div>
+                <span className="text-xs text-orange-600 font-medium uppercase tracking-wide block leading-none mb-0.5">Preço</span>
+                <span className="text-2xl font-black text-orange-600">{product.price}</span>
               </div>
             </div>
 
@@ -167,17 +168,41 @@ export default function ProductDetail() {
                 </button>
               </div>
             </div>
-
-            <div className="mt-6 pt-6 border-t border-border">
-              <p className="text-xs text-muted-foreground text-center">
-                📱 Atendimento rápido via WhatsApp · 🏕️ Equipamentos verificados · 🚚 Entrega combinada
-              </p>
-            </div>
           </div>
         </div>
 
+        {/* DESCRIPTION + SPECS */}
+        {(product.description !== "Descrição em breve." || product.specs.length > 0) && (
+          <div className="mt-12 grid md:grid-cols-2 gap-8">
+            {product.description !== "Descrição em breve." && (
+              <div className="bg-muted/40 rounded-2xl p-6">
+                <h2 className="font-bold text-foreground mb-4 text-lg">Sobre o Produto</h2>
+                <p className="text-muted-foreground text-sm leading-relaxed whitespace-pre-line">
+                  {product.description}
+                </p>
+              </div>
+            )}
+
+            {product.specs.length > 0 && (
+              <div className="bg-[#1a2344] rounded-2xl p-6">
+                <h2 className="font-bold text-white mb-4 text-lg">Especificações Técnicas</h2>
+                <ul className="space-y-2">
+                  {product.specs.map((spec) => (
+                    <li key={spec.label} className="flex items-start gap-2">
+                      <CheckCircle2 className="h-4 w-4 text-orange-400 mt-0.5 flex-shrink-0" />
+                      <span className="text-sm text-gray-300">
+                        <span className="text-white font-semibold">{spec.label}:</span> {spec.value}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
+        )}
+
         {/* Related products */}
-        <div className="mt-16">
+        <div className="mt-14">
           <h2 className="text-2xl font-bold mb-6">Outros Produtos</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {products
@@ -198,6 +223,7 @@ export default function ProductDetail() {
                   </div>
                   <div className="p-3 bg-card">
                     <p className="font-semibold text-xs text-foreground leading-tight line-clamp-2">{p.name}</p>
+                    <p className="text-orange-500 text-xs font-bold mt-1">{p.price}</p>
                   </div>
                 </Link>
               ))}

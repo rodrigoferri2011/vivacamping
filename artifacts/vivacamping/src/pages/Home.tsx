@@ -86,8 +86,8 @@ export default function Home() {
               </Link>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <img src="/camp2.jpeg" alt="Camping" className="rounded-xl object-cover h-48 w-full shadow-lg" />
-              <img src="/camp3.jpeg" alt="Camping" className="rounded-xl object-cover h-48 w-full shadow-lg mt-6" />
+              <img src="/home-nature1.jpeg" alt="Camping" className="rounded-xl object-cover h-48 w-full shadow-lg" />
+              <img src="/home-nature2.jpeg" alt="Camping" className="rounded-xl object-cover h-48 w-full shadow-lg mt-6" />
             </div>
           </div>
         </div>

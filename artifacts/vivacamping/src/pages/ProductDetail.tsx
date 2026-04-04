@@ -70,7 +70,7 @@ export default function ProductDetail() {
               <img
                 src={product.images[currentImage]}
                 alt={`${product.name} - imagem ${currentImage + 1}`}
-                className="w-full h-full object-contain bg-white p-4"
+                className="w-full h-full object-contain bg-white p-1"
               />
               {product.images.length > 1 && (
                 <>

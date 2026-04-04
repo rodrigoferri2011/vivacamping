@@ -13,7 +13,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         <img
           src={product.images[0]}
           alt={product.name}
-          className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+          className="w-full h-full object-contain p-1 group-hover:scale-105 transition-transform duration-500"
         />
         <div className="absolute top-3 left-3">
           <span className="bg-orange-500 text-white text-xs font-semibold px-2 py-1 rounded-full">

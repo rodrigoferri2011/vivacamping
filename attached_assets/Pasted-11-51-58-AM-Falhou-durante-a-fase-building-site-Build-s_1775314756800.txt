@@ -1,0 +1,64 @@
+11:51:58 AM: Falhou durante a fase 'building site': Build script retornou código de saída diferente de zero: 2 (https://ntl.fyi/exit-code-2(S)
+11H51H57: Construção Netlify                                                 
+11H51H57: ────────────────────────────────────────────────────────────────
+11H51H57: 
+11H51H57: ❯ Versão
+11:51:57 AM: @netlify/build 35.11.2
+11H51H57: 
+11H51H57: ❯ Bandeiras
+11:51:57 AM: contaId: 69b1f239883ee2756e02d73d
+11:51:57 AM: baseRelDir: verdade
+11:51:57 AM: buildId: 69d1257ff234945e1eafd06f
+11:51:57 AM: deployId: 69d12580f234945e1eafd071
+11H51H57: 
+11H51H57: ❯ Diretório atual
+11:51:57 AM: /optar/construir/repo
+11H51H57: 
+11H51H57: ❯ Arquivo de configuração
+11:51:57 AM: /opt/build/repo/netlify.toml
+11H51H57: 
+11H51H57: ❯ Contexto
+11h51h57: produção
+11H51H57: 
+11H51H57: build.command from netlify.toml                               
+11H51H57: ────────────────────────────────────────────────────────────────
+11H51H57:
+11H51H57: $ pnpm - filtro @workspace/mockup-sandbox... executar compilação
+11:51:57 AM: > @workspace/mockup-sandbox@2.0.0 build /opt/build/repo/artifacts/mockup-sandbox
+11:51:57 AM: > vite construir
+11H51H58: vite v7.3.1 construindo um ambiente de cliente para a produção...
+11h51m58: transformando...
+11H51H58: ✓ 5 módulos transformados.
+11H51H58: ✗ Construção falhou em 281ms
+11H51H58: erro durante a compilação:
+11H51H58: Não foi possível resolver "./.gerated/mockup-components "de"src/App.tsx"
+11:51:58 AM: arquivo: /opt/build/repo/artifacts/mockup-sandbox/src/App.tsx
+11:51:58 AM: em getRollupError (arquivo:///opt/build/repo/node_modules/.pnpm/rollup@4.59.0/node_modules/rollup/dist/es/shared/parseAst.js:402:41)
+11:51:58 AM: por engano (arquivo:///opt/build/repo/node_modules/.pnpm/rollup@4.59.0/node_modules/rollup/dist/es/shared/parseAst.js:398:42)
+11:51:58 AM: at ModuleLoader.handleInvalidResolvedId (arquivo:///opt/build/repo/node_modules/.pnpm/rollup@4.59.0/node_modules/rollup/dist/es/shared/node-entry.js:21710:24)
+11:51:58 AM: em arquivo:///opt/build/repo/node_modules/.pnpm/rollup@4.59.0/node_modules/rollup/dist/es/shared/node-entry.js:21670:26
+11:51:58 AM: /opt/build/repo/artifacts/mockup-sandbox:
+11H51H58:  ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL  @workspace/mockup-sandbox@2.0.0 build: `vite build`
+11H51H58: Status de saída 1
+11H51H58: 
+11H51H58: "build.command" falhou                                        
+11H51H58: ────────────────────────────────────────────────────────────────
+11H51H58:
+11H51H58:   Mensagem erro
+11:51:58 AM: O comando falhou com o código de saída 1: pnpm - filter @workspace/mockup-sandbox... run build (https://ntl.fyi/exit-code-1(S)
+11H51H58:
+11H51H58:   Local erro
+11:51:58 AM: Em build.command de netlify.toml:
+11:51:58 AM: pnpm - filtro @workspace/mockup-sandbox... execute o build
+11H51H58:
+11H51H58:   Config resolvida
+11:51:58 AM: construir:
+11:51:58 AM: comando: pnpm - filter @workspace/mockup-sandbox... execute o build
+11:51:58 AM: comandoOrigem: config
+11:51:58 AM: meio ambiente:
+11h51h58: - porto
+11:51:58 AM: publicar: /optar/construir/repo/artefatos/mockup-sandbox/dist
+11:51:58 AM: publishOrigem: config
+11:51:58 AM: Build falhou devido a um erro do usuário: Build script retornou código de saída diferente de zero: 2
+11:51:58 AM: Falha na construção: Falha no local de construção
+11:51:59 AM: Processamento terminado build request em 14.286s

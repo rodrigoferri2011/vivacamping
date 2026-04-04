@@ -190,9 +190,10 @@ export default function ProductDetail() {
                   {product.specs.map((spec) => (
                     <li key={spec.label} className="flex items-start gap-2">
                       <CheckCircle2 className="h-4 w-4 text-orange-400 mt-0.5 flex-shrink-0" />
-                      <span className="text-sm text-gray-300">
-                        <span className="text-white font-semibold">{spec.label}:</span> {spec.value}
-                      </span>
+                      <div className="text-sm">
+                        <span className="text-white font-semibold block">{spec.label}</span>
+                        <span className="text-gray-300">{spec.value}</span>
+                      </div>
                     </li>
                   ))}
                 </ul>

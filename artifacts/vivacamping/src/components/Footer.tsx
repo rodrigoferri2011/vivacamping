@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { Phone, Instagram, MapPin } from "lucide-react";
 
 const WHATSAPP_NUMBER = "5519998161001";
-const WHATSAPP_MESSAGE = encodeURIComponent("Olá! Vim através do site do Vivacamping para fazer um orçamento.");
+const WHATSAPP_MESSAGE = encodeURIComponent("Olá! Vim através do site do Viva Camping para fazer um orçamento.");
 
 export default function Footer() {
   return (
@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-4">
               <img
                 src="/logo.jpeg"
-                alt="Vivacamping"
+                alt="Viva Camping"
                 className="h-12 w-12 rounded-full object-cover border-2 border-orange-400"
               />
               <div>
@@ -83,7 +83,7 @@ export default function Footer() {
 
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-gray-500 text-xs">
-            © {new Date().getFullYear()} Vivacamping. Todos os direitos reservados.
+            © {new Date().getFullYear()} Viva Camping. Todos os direitos reservados.
           </p>
           <p className="text-gray-500 text-xs">
             Locação e Experiência de Campismo

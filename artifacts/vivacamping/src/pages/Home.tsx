@@ -4,7 +4,7 @@ import ProductCard from "@/components/ProductCard";
 import { products } from "@/data/products";
 
 const WHATSAPP_NUMBER = "5519998161001";
-const WHATSAPP_MESSAGE = encodeURIComponent("Olá! Vim através do site do Vivacamping para fazer um orçamento.");
+const WHATSAPP_MESSAGE = encodeURIComponent("Olá! Vim através do site do Viva Camping para fazer um orçamento.");
 
 const featuredProducts = products.slice(0, 4);
 
@@ -23,7 +23,7 @@ export default function Home() {
           <div className="flex justify-center mb-8">
             <img
               src="/logo.jpeg"
-              alt="Vivacamping"
+              alt="Viva Camping"
               className="h-32 w-32 rounded-full border-4 border-orange-400 shadow-2xl object-cover"
             />
           </div>
@@ -72,7 +72,7 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mt-2 mb-6">Paixão pela Natureza</h2>
               {/* PLACEHOLDER: Adicione o texto da história da marca aqui */}
               <p className="text-muted-foreground leading-relaxed mb-4">
-                O Vivacamping nasceu da paixão por aventuras ao ar livre e do desejo de compartilhar experiências únicas em contato com a natureza. Nossa missão é proporcionar equipamentos de qualidade e experiências memoráveis para famílias e grupos.
+                O Viva Camping nasceu da paixão por aventuras ao ar livre e do desejo de compartilhar experiências únicas em contato com a natureza. Nossa missão é proporcionar equipamentos de qualidade e experiências memoráveis para famílias e grupos.
               </p>
               <p className="text-muted-foreground leading-relaxed mb-6">
                 Desde 2019 no mercado de camping e locação de equipamentos, somos referência em Campinas para quem busca qualidade, conforto e segurança em suas aventuras ao ar livre.

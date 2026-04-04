@@ -9,11 +9,11 @@ interface ProductCardProps {
 export default function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="product-card group">
-      <div className="relative overflow-hidden h-52">
+      <div className="relative overflow-hidden h-52 bg-white">
         <img
           src={product.images[0]}
           alt={product.name}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
         />
         <div className="absolute top-3 left-3">
           <span className="bg-orange-500 text-white text-xs font-semibold px-2 py-1 rounded-full">

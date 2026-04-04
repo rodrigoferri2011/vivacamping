@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X, Phone } from "lucide-react";
 
 const WHATSAPP_NUMBER = "5519998161001";
-const WHATSAPP_MESSAGE = encodeURIComponent("Olá! Vim através do site do Vivacamping para fazer um orçamento.");
+const WHATSAPP_MESSAGE = encodeURIComponent("Olá! Vim através do site do Viva Camping para fazer um orçamento.");
 
 const navLinks = [
   { href: "/", label: "Início" },
@@ -24,7 +24,7 @@ export default function Navbar() {
           <Link href="/" className="flex items-center gap-3 flex-shrink-0">
             <img
               src="/logo.jpeg"
-              alt="Vivacamping"
+              alt="Viva Camping"
               className="h-11 w-11 rounded-full object-cover border-2 border-orange-400"
             />
             <div className="hidden sm:block">

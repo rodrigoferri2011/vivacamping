@@ -24,7 +24,7 @@ export default function ProductDetail() {
   }
 
   const whatsappMessage = encodeURIComponent(
-    `Olá! Vim através do site do Vivacamping para fazer um orçamento. Produto de interesse: ${product.name}`
+    `Olá! Vim através do site do Viva Camping para fazer um orçamento. Produto de interesse: ${product.name}`
   );
 
   const prevImage = () =>
@@ -70,7 +70,7 @@ export default function ProductDetail() {
               <img
                 src={product.images[currentImage]}
                 alt={`${product.name} - imagem ${currentImage + 1}`}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain bg-white p-4"
               />
               {product.images.length > 1 && (
                 <>
@@ -218,7 +218,7 @@ export default function ProductDetail() {
                     <img
                       src={p.images[0]}
                       alt={p.name}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-contain bg-white group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                   <div className="p-3 bg-card">

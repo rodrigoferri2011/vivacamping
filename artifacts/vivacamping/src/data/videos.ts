@@ -18,7 +18,7 @@ export const videos: Video[] = [
   },
   {
     id: "video-2",
-    title: "Quadro de energia Vivacamping",
+    title: "Quadro de energia Viva Camping",
     channel: "Dois Pés do Mato",
     description: "Nosso quadro",
     youtubeId: "eRIOIoPbhnI",

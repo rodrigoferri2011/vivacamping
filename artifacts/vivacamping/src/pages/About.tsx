@@ -36,14 +36,14 @@ export default function About() {
             </p>
           </div>
           <div className="rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
-            <img src="/camp2.jpeg" alt="Viva Camping em ação" className="w-full h-full object-cover" />
+            <img src="/about-story1.jpeg" alt="Viva Camping em ação" className="w-full h-full object-cover" />
           </div>
         </div>
 
         {/* Section 2 */}
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div className="rounded-2xl overflow-hidden shadow-xl aspect-[4/3] md:order-first">
-            <img src="/camp3.jpeg" alt="Família acampando" className="w-full h-full object-cover" />
+            <img src="/about-story2.jpeg" alt="Acampamento Viva Camping" className="w-full h-full object-cover" />
           </div>
           <div>
             <h2 className="text-2xl font-black text-foreground mb-4">Crescimento e Evolução</h2>

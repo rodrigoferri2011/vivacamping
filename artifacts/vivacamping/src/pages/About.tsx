@@ -88,7 +88,7 @@ export default function About() {
         <div className="mb-16">
           <h2 className="text-2xl font-black text-foreground mb-6 text-center">Nossa Galeria</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {["/camp1.jpeg", "/camp2.jpeg", "/camp3.jpeg", "/hero.jpeg", "/camp2.jpeg", "/camp1.jpeg"].map((img, i) => (
+            {["/about-group.jpeg", "/about-tent-night.jpeg", "/camp3.jpeg", "/about-yoga.jpeg", "/camp2.jpeg", "/about-tents-field.jpeg"].map((img, i) => (
               <div key={i} className="rounded-xl overflow-hidden shadow-md aspect-square">
                 <img src={img} alt="" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>

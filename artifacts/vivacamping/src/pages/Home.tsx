@@ -162,7 +162,7 @@ export default function Home() {
       {/* ── GALLERY STRIP ── */}
       <section className="pb-4 overflow-x-auto">
         <div className="flex gap-4 px-4 w-max">
-          {["/hero.jpeg", "/camp1.jpeg", "/camp2.jpeg", "/camp3.jpeg"].map((img, i) => (
+          {["/camp1.jpeg", "/hero.jpeg", "/about-group.jpeg", "/about-yoga.jpeg"].map((img, i) => (
             <div key={i} className="flex-shrink-0 w-72 h-48 rounded-xl overflow-hidden">
               <img src={img} alt="" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>

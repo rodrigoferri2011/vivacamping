@@ -160,10 +160,10 @@ export default function Home() {
       </section>
 
       {/* ── GALLERY STRIP ── */}
-      <section className="pb-4 overflow-x-auto">
-        <div className="flex gap-4 px-4 w-max">
+      <section className="pb-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {["/camp1.jpeg", "/hero.jpeg", "/about-group.jpeg", "/about-yoga.jpeg"].map((img, i) => (
-            <div key={i} className="flex-shrink-0 w-72 h-48 rounded-xl overflow-hidden">
+            <div key={i} className="h-48 rounded-xl overflow-hidden">
               <img src={img} alt="" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
             </div>
           ))}

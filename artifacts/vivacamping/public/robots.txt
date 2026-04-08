@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vivacamping.com.br/sitemap.xml

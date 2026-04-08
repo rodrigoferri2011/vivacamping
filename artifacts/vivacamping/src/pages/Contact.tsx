@@ -1,4 +1,4 @@
-import { Phone, Instagram, MapPin, Clock, MessageCircle } from "lucide-react";
+import { Phone, Instagram, MapPin, Clock, MessageCircle, Mail } from "lucide-react";
 
 const WHATSAPP_NUMBER = "5519998161001";
 const WHATSAPP_MESSAGE = encodeURIComponent("Olá! Vim através do site do Viva Camping para fazer um orçamento.");
@@ -76,13 +76,16 @@ export default function Contact() {
           </div>
 
           <div className="bg-card border border-card-border rounded-2xl p-6 text-center shadow-sm hover:shadow-md transition-shadow">
-            <div className="w-12 h-12 bg-muted rounded-xl flex items-center justify-center mx-auto mb-4">
-              <Phone className="h-6 w-6 text-muted-foreground" />
+            <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <Mail className="h-6 w-6 text-orange-500" />
             </div>
             <h3 className="font-bold text-foreground mb-1">E-mail</h3>
-            {/* PLACEHOLDER: Adicione o e-mail de contato aqui */}
-            <p className="text-muted-foreground text-sm">Em breve</p>
-            <p className="text-muted-foreground text-xs mt-1">Por enquanto, use o WhatsApp</p>
+            <a
+              href="mailto:vivacampingsp@gmail.com"
+              className="text-orange-500 hover:text-orange-600 font-semibold text-sm underline break-all"
+            >
+              vivacampingsp@gmail.com
+            </a>
           </div>
         </div>
 
